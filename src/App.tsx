@@ -1,6 +1,10 @@
 import * as React from 'react';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
+import counterTheme from './styles/counterTheme';
+import { Counter } from './Counter';
 
 export const App = () => (
-  <ChakraProvider theme={theme}>future app gonna be here</ChakraProvider>
+  <ChakraProvider theme={counterTheme}>
+    <Counter />
+  </ChakraProvider>
 );
