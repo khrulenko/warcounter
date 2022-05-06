@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Text, Box, Center, useMultiStyleConfig } from '@chakra-ui/react';
 
-const warStartDate = '2022, 02, 24';
+const warStartDate = '2022, 02, 23, 23:00:00';
 
 const msToDays = (miliseconds: number) =>
-  Math.ceil(miliseconds / (1000 * 3600 * 24));
+  Math.ceil(miliseconds / 1000 / 60 / 60 / 24);
 
 const getWarDayNumber = () => {
   const warDate = new Date(warStartDate);
