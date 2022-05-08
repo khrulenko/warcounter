@@ -1,17 +1,15 @@
 import * as React from 'react';
 import { Text, Box, Center, useMultiStyleConfig } from '@chakra-ui/react';
-
-const warStartDate = '2022, 02, 23, 23:00:00';
-
-const msToDays = (miliseconds: number) =>
-  Math.ceil(miliseconds / 1000 / 60 / 60 / 24);
+import dayjs from 'dayjs';
 
 const getWarDayNumber = () => {
-  const warDate = new Date(warStartDate);
-  const today = new Date();
-  const diff = today.getTime() - warDate.getTime();
+  const warStartDate = dayjs('2022-02-24');
+  const now = dayjs();
 
-  return msToDays(diff);
+  const daysPassed = now.diff(warStartDate, 'day');
+  const currentDayNumber = daysPassed + 1
+
+  return currentDayNumber;
 };
 
 export const Counter = (props: any) => {
