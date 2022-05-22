@@ -2,6 +2,11 @@ const globalStyles = {
   global: {
     '*': {
       boxSizing: 'border-box',
+
+      '&::selection': {
+        backgroundColor: 'red.main',
+        color: 'black',
+      }
     },
     'html, body, #root': {
       height: '100%',
