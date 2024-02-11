@@ -1,8 +1,9 @@
-import { Stack } from '@mui/material';
+import { Link, Stack, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
 import { Header, WarDay, Wrapper } from './styled';
+import Flag from './ui/styles/components/Flag';
 
 // needed for timezone plugins
 dayjs.extend(utc);
@@ -22,7 +23,7 @@ const App = () => {
   const warDayNumber = getWarDayNumber();
 
   return (
-    <Stack sx={{ alignItems: 'center', width: '100%' }}>
+    <Stack alignItems="center" width="100%">
       <Wrapper>
         <Header>
           the day of
@@ -31,8 +32,25 @@ const App = () => {
           <br />
           the russian-ukrainian war
         </Header>
-
         <WarDay>{warDayNumber}</WarDay>
+
+        <Typography
+          sx={{
+            color: 'common.white',
+            textAlign: 'center',
+            letterSpacing: '2px',
+          }}
+        >
+          russia is still killing ukrainians
+          <br />
+          and committing crimes
+          <br />
+          to support Ukraine, tap the flag
+        </Typography>
+
+        <Link href="https://savelife.in.ua/en/donate-en/" target="_blank">
+          <Flag />
+        </Link>
       </Wrapper>
     </Stack>
   );

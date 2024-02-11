@@ -10,3 +10,7 @@ The purpose of this application is to raise awareness about the ongoing russian 
 Glory to Ukraine!
 Slava Ukraini!
 Слава Україні!
+
+### Support Ukraine:
+
+[The Charity Foundation "Come Back Alive"](https://savelife.in.ua/en/donate-en/)
