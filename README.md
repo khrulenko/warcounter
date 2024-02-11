@@ -1,4 +1,4 @@
-### [LINK TO THE APP](https://warcounter.vercel.app/search/)
+### [LINK TO THE APP](https://warcounter.vercel.app/)
 
 ## Overview
 
