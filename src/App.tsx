@@ -43,9 +43,9 @@ const App = () => {
         >
           russia is still killing ukrainians
           <br />
-          and committing crimes
+          and committing crimes.
           <br />
-          to support Ukraine, tap the flag
+          To support Ukraine tap the flag
         </Typography>
 
         <Link href="https://savelife.in.ua/en/donate-en/" target="_blank">
